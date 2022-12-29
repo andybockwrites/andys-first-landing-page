@@ -1,0 +1,161 @@
+/* Universal Selector
+    Applies to ALL CSS */
+
+* {
+    margin:0;
+    padding:0;
+}
+
+/* Element Selectors
+    (Elements are typically parents) */
+
+body {
+    position: relative;
+    font-family: "Verdana", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    background-color: #FDF8F5;
+    color: #266150;
+}
+
+h1,
+h2 {
+    margin: 20px;
+}
+
+main {
+    padding: 60px 0;
+}
+
+li {
+    display: inline;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FDF8F5;
+}
+
+a:hover {
+    background-color:#530369;
+    cursor: pointer;
+}
+
+a:active {
+    font-size: 80%;
+    box-shadow: 0 0 10px #000;
+}
+
+header,
+footer {
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    background-color: #266150;
+}
+
+header {
+    position: fixed;
+    border-bottom: 5px solid #530369;
+}
+
+footer {
+    position: absolute;
+    margin-top: 0;
+    bottom: 0;
+    border-bottom: 5px solid #530369;
+    color: #FDF8F5;
+}
+
+figure {
+    margin-bottom: 40px;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    box-shadow: 10px 10px 4px gray;
+    border-radius: 10px;
+}
+
+section {
+    margin-bottom: 0;
+    padding: 20px 10px 40px 10px;
+    border-top: 3px solid #530369;
+    background-color: #E8CEBF;
+}
+
+form {
+    /* Center the form on the page with margin: 0 AUTO */
+    margin: 0 auto;
+    width: 500px;
+    padding: 10px;
+    border: 5px solid #530369;
+    border-radius: 15px;
+    box-shadow: 10px 10px 4px gray;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+input,
+textarea {
+    box-sizing: border-box;
+    width: 300px;
+    border: 1px solid #4F4846;
+}
+
+textarea {
+    vertical-align: top;
+    height: 60px;
+}
+
+input:hover {
+    box-shadow: 2px 4px 5px gray;
+}
+
+button {
+    height: 40px;
+    width: 120px;
+    background-color: #4F4846;
+    color: #FDF8F5;
+    border-color:#530369;
+}
+
+button:hover {
+    background-color:#530369;
+    border-color: #266150;
+    cursor: pointer;
+}
+
+button:active {
+    font-size: 60%;
+    box-shadow: 0 0 10px #000;
+}
+
+/* Class Selectors
+    In this case they align blocks of text, identifying them by Class */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center-small {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 992px) {
+    img {
+        width: 50%;
+        height: 50%;
+    }
+}
